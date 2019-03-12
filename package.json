@@ -1,0 +1,21 @@
+{
+  "name": "google-directions-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "cov": "jest --coverage"
+  },
+  "author": "Ori Efrati",
+  "license": "MIT",
+  "dependencies": {
+    "qs-google-signature": "^1.2.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "jest": "^24.5.0",
+    "mocha": "^6.0.2"
+  }
+}
