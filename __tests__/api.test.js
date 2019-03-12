@@ -37,4 +37,20 @@ describe('Options tests', function() {
         done();
     });
 
+    it('avoid should be formated', function(done) {
+        distance.avoid('dest_1')
+        var opts = distance.getOptions();
+        expect(opts.avoid).to.equal('dest_1');
+
+        distance.avoid(['dest_1'])
+        opts = distance.getOptions();
+        expect(opts.avoid).to.equal('dest_1');
+
+        distance.avoid(['dest_1', 'dest_2'])
+        opts = distance.getOptions();
+        expect(opts.avoid).to.equal('dest_1|dest_2');
+
+        done();
+    });
+
 })
