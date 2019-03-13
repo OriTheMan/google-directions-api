@@ -53,4 +53,12 @@ describe('Options tests', function() {
         done();
     });
 
+    it('units should be imperial', function(done) {
+        distance.units('imperial')
+        var opts = distance.getOptions();
+        
+        expect(opts.units).to.equal('imperial');
+        done();
+    });
+
 })
