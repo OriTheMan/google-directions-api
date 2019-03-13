@@ -1,13 +1,30 @@
 {
   "name": "google-directions-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Google maps directions API wrapper",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OriTheMan/google-directions-api.git"
+  },
   "scripts": {
     "test": "jest --coverage"
   },
-  "author": "Ori Efrati",
+  "keywords": [
+    "google",
+    "maps",
+    "api",
+    "directions",
+    "json",
+    "node",
+    "wrapper"
+  ],
+  "author": "Ori Efrati <oritheman132@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OriTheMan/google-directions-api/issues"
+  },
+  "homepage": "https://github.com/OriTheMan/google-directions-api#readme",
   "dependencies": {
     "qs-google-signature": "^1.2.0",
     "request": "^2.88.0"
