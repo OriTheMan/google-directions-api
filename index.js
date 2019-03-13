@@ -133,7 +133,7 @@ GoogleDirections.prototype.signature = function(signature) {
 }
 
 GoogleDirections.prototype.traffic_model = function(trafficModel) {
-  if (validTrafficModel.indexOf(units) < 0) {
+  if (validTrafficModel.indexOf(trafficModel) < 0) {
     throw new Error('Invalid traffic model: ' + trafficModel);
   }
   this.options.traffic_model = trafficModel;
